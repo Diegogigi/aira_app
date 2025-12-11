@@ -1,0 +1,4 @@
+# Este archivo permite que Railway detecte que es un proyecto Python
+# Las dependencias reales están en backend/requirements.txt
+-r backend/requirements.txt
+
