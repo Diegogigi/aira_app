@@ -4,10 +4,9 @@
 
 [build]
 builder = "NIXPACKS"
-buildCommand = "echo 'Building AeroPro...'"
 
 [deploy]
-startCommand = "cd backend && uvicorn app.main:app --host 0.0.0.0 --port $PORT"
+startCommand = "cd backend && python -m uvicorn app.main:app --host 0.0.0.0 --port $PORT"
 restartPolicyType = "ON_FAILURE"
 restartPolicyMaxRetries = 10
 
